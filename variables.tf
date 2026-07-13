@@ -21,16 +21,16 @@ EOT
   type = map(object({
     name                                    = string
     namespace_id                            = string
-    auto_delete_on_idle                     = optional(string) # Default: "P10675199DT2H48M5.4775807S"
+    auto_delete_on_idle                     = optional(string)
     batched_operations_enabled              = optional(bool)
-    default_message_ttl                     = optional(string) # Default: "P10675199DT2H48M5.4775807S"
-    duplicate_detection_history_time_window = optional(string) # Default: "PT10M"
+    default_message_ttl                     = optional(string)
+    duplicate_detection_history_time_window = optional(string)
     express_enabled                         = optional(bool)
     max_message_size_in_kilobytes           = optional(number)
     max_size_in_megabytes                   = optional(number)
     partitioning_enabled                    = optional(bool)
     requires_duplicate_detection            = optional(bool)
-    status                                  = optional(string) # Default: "Active"
+    status                                  = optional(string)
     support_ordering                        = optional(bool)
   }))
 }
